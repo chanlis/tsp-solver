@@ -114,8 +114,6 @@ def solve_tsp( distances, optim_steps=3, pairs_by_dist=pairs_by_dist, endpoints=
         start, end = endpoints
         if start == end: raise ValueError("start=end is not supported")
         node_valency[start]=1
-        node_valency[end]=1
-        
         
     #for each node, stores 1 or 2 connected nodes
     connections = [[] for i in xrange(N)] 
